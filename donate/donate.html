@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>Donation</title>
+    <style>
+        *{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Josefin Sans',sans-serif;
+  }
+  body{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: hsla(208, 89%, 86%, 0.81);
+   
+  }
+ .container{
+     width:424px;
+     height:350px;
+     background-color: #ffffff;
+     border:1px solid #f9f9f9;
+     border-radius: 15px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-content: center;
+     text-align: center;
+     box-shadow: 50px 50px 25px 5px rgba(131, 200, 241, 0.52);
+ }
+ img{
+    width: 20%;
+    height: 20%;
+    margin: 0 auto;
+ }
+ p{
+     font-size: 1.5rem;
+     padding:0rem 2rem;
+       animation: blink 2s infinite  ease-in-out;
+     
+ }
+ @keyframes blink{
+    0%{
+        opacity: 0;
+        }
+    50%{
+        opacity: 0.5;
+        }
+    100%{
+     
+        opacity: 1;
+        }
+}
+
+
+ form{
+     margin-top: -20px;
+ }
+ button{
+    width:150px;
+     height:50px;
+     border-radius: 10px;
+     font-size: 20px;
+     font-weight: 500;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+     color:#ffffff;
+     border:1px solid #dedede;
+     cursor: pointer;
+    
+ }
+ .paytm{
+    background-color:#00B9F5;
+ }
+ .bhim{
+    background-color:#FF7A08;
+ }
+ .googlepay{
+    background-color: #1A73E8;
+ }
+ button:hover{
+    background-color:hsl(154, 59%, 51%);
+    border:1px solid hsl(154, 59%, 51%);
+    color:white;
+    transition: all 0.5s ease-in-out;
+    box-shadow:0px 10px 20px -5px rgba(84,110,112,0.35);
+   }
+   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="coin.png" alt="coin">
+      <h2>Donate</h2>
+      <p>Donate to pm cares fund </p>
+      <form>
+            <button type="submit"  class="paytm">Paytm</button>
+              <button type="submit" class="bhim">BHIM</button>
+              <button type="submit" class="googlepay">Google Pay</button>
+       
+      </form>
+    
+    </div>
+</body>
+</html>
